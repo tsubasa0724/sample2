@@ -15,7 +15,7 @@ class Animal
         Console.WriteLine("......");
     }
 
-    public void ShowProfile()
+    public void ShowProfiles()
     {
         Console.WriteLine(Name + "," + Age + "歳");
     }
@@ -57,7 +57,7 @@ class Program
         Animal[] animal = { new Cat("くわた", 24), new Dog("つばさ", 25), new Cat("くわた", 23), new Dog("つばさ", 26) };
         foreach (Animal a in animal)
         {
-            a.ShowProfile();
+            a.ShowProfiles();
             a.Speaks();
         }
     }
