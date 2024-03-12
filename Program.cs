@@ -10,7 +10,7 @@ class Animal
         Name = name;
         Age = age;
     }
-    public virtual void Speak()
+    public virtual void Speaks()
     {
         Console.WriteLine("......");
     }
@@ -30,7 +30,7 @@ class Cat : Animal
     {
         Console.WriteLine("スースー");
     }
-    public override void Speak()
+    public override void Speaks()
     {
         Console.WriteLine("ニャー");
     }
@@ -45,7 +45,7 @@ class Dog : Animal
     {
         Console.WriteLine("トコトコ");
     }
-    public override void Speak()
+    public override void Speaks()
     {
         Console.WriteLine("ワンワン");
     }
@@ -58,7 +58,7 @@ class Program
         foreach (Animal a in animal)
         {
             a.ShowProfile();
-            a.Speak();
+            a.Speaks();
         }
     }
 }
